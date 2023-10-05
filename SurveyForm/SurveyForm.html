@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey</title>
+    <link rel="stylesheet" href="SurveyFormStyles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Customer Satisfaction Survey</h1>
+        <p id="description">Please fill out this survey form.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" id="number" name="number" placeholder="Enter an Age" min="1" max="100" required>
+
+            <label for="dropdown">How frequently do you eat here?:</label>
+            <select id="dropdown" name="dropdown" required>
+                <option value="option1">Once a week</option>
+                <option value="option2">Twice a week</option>
+                <option value="option3">Once a month</option>
+                <option value="option4">More than once a month</option>
+                <option value="option5">This was my first time here</option>
+            </select>
+
+            <fieldset>
+                <legend>Would you recommend our restuarant to a friend?:</legend>
+            <div>
+                <input type="radio" id="radio1" name="radioGroup" value="radioOption1">
+                <label for="radio1">Definitely</label>
+            </div>
+            <div>
+                <input type="radio" id="radio2" name="radioGroup" value="radioOption2">
+                <label for="radio2">Maybe</label>
+            </div>
+            <div>
+                <input type="radio" id="radio3" name="radioGroup" value="radioOption3">
+                <label for="radio3">Probably Not</label>
+            </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>What would you like to see improved? (check all that apply)</legend>
+            <div>
+                <input type="checkbox" id="checkbox1" name="checkbox" value="checkboxOption1">
+                <label for="checkbox1">More Menu Items</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2" name="checkbox" value="checkboxOption2">
+                <label for="checkbox2">More Coffee Flavors</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox3" name="checkbox" value="checkboxOption3">
+                <label for="checkbox3">Outdoor Setting</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox4" name="checkbox" value="checkboxOption4">
+                <label for="checkbox4">Live Music</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox5" name="checkbox" value="checkboxOption5">
+                <label for="checkbox5">More Seating</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox6" name="checkbox" value="checkboxOption6">
+                <label for="checkbox6">Customer Service</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox7" name="checkbox" value="checkboxOption7">
+                <label for="checkbox7">Cheaper Prices</label>
+            </div>
+            </fieldset>
+
+            <label for="comments">Any comments or suggestions?:</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>We appreciate your feedback!</p>
+    </footer>
+</body>
+</html>
